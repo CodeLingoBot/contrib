@@ -248,7 +248,7 @@ func (s serviceAnnotations) getAclMatch() (string, bool) {
 	return val, ok
 }
 
-// Get serves the error page
+// Getfunc gets serves the error page
 func (s *staticPageHandler) Getfunc(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(s.returnCode)
 	w.Write(s.pageContents)
